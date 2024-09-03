@@ -1,19 +1,18 @@
-const postgres = require('postgres');
+const { Client } = require('pg');
 
-const connection = postgres({
+const client = new Client({
   host: 'localhost',
-  port: 3001,
-  database: 'employee_db',
-  username: 'postgres',
+  user: 'postgres',
+  database: 'employees_db',
   password: '',
+  port: 3001,
 });
-
-connection.connect(err => {
+client.connect(err => {
     if (err) {
-        console.error(' error connecting: ' + err.stack);
+        console.error(' error connecting to the database: ' + err.stack);
         return;
     }
-    console.log('connected as id ' + connection.threadId);
+    console.log('Connected to the employee_db database.');
 });
 
-module.exports = connection;
+module.exports = client;
