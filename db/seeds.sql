@@ -1,7 +1,7 @@
 INSERT INTO department (name)
 VALUES
 ('Sales'),
-('Tech Support')
+('Tech Support'),
 ('Management'),
 ('Finance'),
 ('Legal'),
@@ -30,7 +30,7 @@ VALUES
 ('Alex', 'Jones', 4, 6),
 ('Angel', 'Sambrano', 4, 6),
 ('Jackie', 'Dexter', 4, 6),
-('Jill', 'Doe', 5, 20);
+('Jill', 'Doe', 5, 20),
 ('Angie', 'Lu', 6, 10),
 ('Theodore', 'Smiths', 6, 10),
 ('Bob', 'Winx', 6, 10),

@@ -3,10 +3,11 @@ const { Client } = require('pg');
 const client = new Client({
   host: 'localhost',
   user: 'postgres',
-  database: 'employees_db',
-  password: '',
-  port: 3001,
+  database: 'employee_db',
+  password: '1',
+  port: 5432,
 });
+
 client.connect(err => {
     if (err) {
         console.error(' error connecting to the database: ' + err.stack);
